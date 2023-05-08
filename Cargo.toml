@@ -1,0 +1,11 @@
+[package]
+name = "tls-client-dioxus"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = "0.3"
+dioxus-desktop = "0.3"
+tokio-tungstenite = { version = "0.18.0", features = ["tokio-rustls", "rustls"] }
